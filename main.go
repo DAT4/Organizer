@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	token := "NzUwMDQ0MjkwNDE5NTIzNzg2.X00zLQ.NpS_3aAKusBY2nU-imhmeVz89jY"
+	token := os.Getenv("ORGANIZER_KEY")
 
 	// Create a new Discord session using the provided bot token.
 	dg, err := discordgo.New("Bot " + token)
